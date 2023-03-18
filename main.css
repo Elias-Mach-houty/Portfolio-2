@@ -1,0 +1,548 @@
+*{margin: 0px;}
+
+@font-face {
+    font-family: 'ilyasregular';
+    src: url('Ressource/ilyas-webfont.woff2') format('woff2'),
+         url('Ressource/ilyas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@media (min-width: 660px) {
+    header { background-color: rgba(255, 255, 255, 0.0);
+            backdrop-filter: blur(6px); }   
+}
+
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .projectimgdiv { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+
+}
+
+@media (min-width: 1300px) {
+    .titlecontainer { gap: 300px; }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1D1D1D;
+    background-image: url(./Ressource/bg-monogram\ \(7\).png);
+}
+
+.pabout {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    background-color: #272727;
+
+}
+
+main {
+    padding-top: 4rem;
+}
+
+
+header >  a  > img {
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    list-style-type: none;
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+nav > li {
+    
+    border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 60px;
+    padding-top: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav > li:hover {
+    background-color: white;
+    
+}   
+
+nav > li:hover a {
+    color: black;
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    margin-left: 90px;
+    margin-bottom: 0%;
+    color: white;
+
+}
+
+
+.bio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 90px;
+    margin-right:90px;
+    margin-top: 10;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: 90px;
+    margin-top: 80px;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.contact {
+    margin-left: 90px;
+    padding: 2%;
+}
+
+.reseaux {
+    padding: 0%;
+    margin-top: 30px;
+    display: flex;
+}
+
+.reseaux > li {
+    margin-right: 60px;
+}
+
+.hero {
+    display: grid;
+    justify-content: center;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.mainherowrapper {
+    display: grid;
+    margin-top: 190px;
+    margin-right: 750px;
+}
+
+.image-moi {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./Ressource/moi1\ \(1\).png);
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descabout{
+    margin-top: 2rem;
+}
+
+
+.hero > h1 {
+    font-size: 32px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+  
+.mainhero {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+   padding-left: 90px;
+   padding-top: 20px;
+   padding-bottom: 30px;
+   padding-right: 20px;
+   border-bottom-right-radius:2%;
+   border-top-right-radius: 2%;
+   transition: linear 1s;
+
+}
+
+
+.mainhero > h1 {
+    margin-left:0%;
+   
+}
+
+.buttonhero {
+    
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Josefin Sans';
+    background-color: white;
+    color: black;
+    width: 540px;
+    margin-top: 30px;
+    height: 60px;
+    transition: 0.4s;
+}
+
+.buttonhero:hover {
+    background-color: black;
+    color: white;
+   
+}   
+
+
+
+.projects {
+    margin-top: 120px;
+    display:    grid ;
+    grid-template-columns: auto auto auto;
+}
+
+.project1 {
+    font-family: 'Poppins';
+    font-size: 32px;
+    
+    margin-left: 120px;
+}
+
+.projets > a {
+font-family: 'Poppins';
+font-size: 32px;
+}
+
+
+.pres {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    justify-content: center;
+}
+
+.pres > h1 {
+    margin-top: 200px;
+    margin-left: 0;
+}
+
+
+
+
+.descr {
+    font-family: 'Josefin Sans';
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 890px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.Boutons {
+    display: flex;
+    margin-top: 40px;
+}
+
+.card {
+    color: white;
+    padding: 1rem;
+    height: 16rem;
+    border: solid 1px black;
+    transition: 0.4s;
+    width: auto;
+  }
+
+.cards {
+   
+    max-width: 100%;
+    margin: 0 ;
+    display: grid;
+    
+  }
+
+.section {
+    margin-top: 150px;
+}
+
+
+.card:hover .secrettext {
+    opacity: 1;
+    
+  }
+
+.secrettext{
+    color: black;
+    opacity: 0;
+}
+
+.projectname {
+    margin-top: 20px;
+    font-family: 'Josefin Sans';
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.projectdesccontain {
+    display: flex;
+}
+
+.projectdesc {
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1%;
+    font-family: 'Josefin Slab', serif;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer > .contact {
+    justify-content: space-between;
+}
+
+.projectimg {
+    color: white;
+    padding: 1rem;
+    height: 14rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+.projectimg1 {
+    color: white;
+    padding: 1rem;
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.projectimg2 {
+    color: white;
+    padding: 1rem;
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.projectimgdiv {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+
+
+.ep1 {
+    background-image: url(./Ressource/mockup_EP3.png);
+    background-size: contain;
+}
+
+.ep2 {
+    background-image: url(./Ressource/mockup-EP4.png);
+}
+
+.poster1 {
+    background-image: url(./Ressource/Eren\ draw.png);
+    background-position: 50% 8%;
+}
+
+.poster2 {
+    background-image: url(./Ressource/sukunadraw.png);
+    background-position: 50% 10%;
+}
+
+.poster3 {
+    background-image: url(./Ressource/picollo\ saaaaan.png);
+    background-position: 50% 10%;
+}
+
+.eskiss1 {
+    background-image: url(./Ressource/mac_et_iphone.png);
+}
+
+.eskiss2 {
+    background-image: url(./Ressource/Free\ Laptop\ Screen\ Mockup\ In\ A\ Office\ Environment.png);
+    background-position: 50% 75%;
+}
+
+.homepage {
+    background-image: url(./Ressource/bg-monogram\ \(7\).png);
+    background-repeat: none;
+    background-size:auto
+
+}
+
+.aboutcontact {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: 300;
+    padding: 2%;
+}
+
+.aboutcontact > a {
+    text-decoration: underline;
+}
+
+.aboutcontact > p > a {
+    text-decoration: underline;
+}
+
+.card1 {
+    background-image: url(./Ressource/mockup-EP1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    background-color: white; 
+    background-image: none; 
+  }
+
+
+.card2 {
+    background-image: url(./Ressource/mockup-eskiss1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card3 {
+    background-image: url(./Ressource/eren\ freedom\ draw.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.maincontainer {
+    display: grid;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-items: center;
+}
+
+.titlecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    padding-bottom: 1rem;
+    
+}
+
+.titlecontainer > h1 {
+    margin-left: 0;
+    text-align: start;
+}
+
+.titlecontainer > div > p {
+    font-family: 'Josefin Sans';
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.imgcontainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 450px;
+}
+
+.imgcontainer1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 450px;
+    background-position: 50% 40%;
+}
+
+.projectbutton {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 18px;
+    transition: 0.5s;
+    min-width: max-content;
+    white-space: nowrap;
+}
+
+.projectbutton:hover {
+    color: white;
+    background-color: black;
+}
+
+.projectbutton:hover .svgarrow {
+    fill: white;
+}
+
+
+.imgproject {
+    min-width: 200px;
+    background-position: center;
+    background-size: cover;
+}
