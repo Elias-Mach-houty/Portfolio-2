@@ -313,7 +313,11 @@ font-size: 32px;
   }
 
 .section {
-    margin-top: 150px;
+    margin-top: 90px;
+}
+
+.myworktitle {
+    padding-bottom: 2rem ;
 }
 
 
@@ -377,51 +381,102 @@ footer > .contact {
 .projectimg2 {
     color: white;
     padding: 1rem;
-    height: 60rem;
+    height: 50rem;
     background-size: cover;
     background-position: center;
 }
+
+
 
 .projectimgdiv {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
     gap: 0.5rem;
+    
+  }
+
+  .poster1:hover {
+      transform: scale(1.1);
+      
+  }
+
+  
+  .poster2:hover {
+    transform: scale(1.1);
+  }
+  
+  .ep1:hover {
+    transform: scale(1.1);
+  }
+  
+  .ep2:hover {
+    transform: scale(1.1);
+  }
+  
+  .eskiss1:hover {
+    transform: scale(1.1);
+  }
+  
+  .eskiss2:hover {
+    transform: scale(1.1);
   }
 
 
 
 .ep1 {
     background-image: url(./Ressource/mockup_EP3.png);
-    background-size: contain;
+    transition: transform 0.15s;
 }
 
 .ep2 {
     background-image: url(./Ressource/mockup-EP4.png);
+    transition: transform 0.15s;
 }
 
 .poster1 {
     background-image: url(./Ressource/Eren\ draw.png);
-    background-position: 50% 8%;
+    transition: transform 0.15s;
 }
 
 .poster2 {
     background-image: url(./Ressource/sukunadraw.png);
-    background-position: 50% 10%;
+    transition: transform 0.15s;
 }
 
-.poster3 {
-    background-image: url(./Ressource/picollo\ saaaaan.png);
-    background-position: 50% 10%;
+
+.imgpicollo {
+    max-width: 600px;
+    max-height: fit-content;
+}
+
+.grow-rotate-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.grow-rotate-on-hover:hover,
+.grow-rotate-on-hover:focus,
+.grow-rotate-on-hover:active {
+    -webkit-transform: scale(1.1) rotate(4deg);
+    transform: scale(1.1) rotate(4deg);
 }
 
 .eskiss1 {
     background-image: url(./Ressource/mac_et_iphone.png);
+    transition: transform 0.15s;
 }
 
 .eskiss2 {
     background-image: url(./Ressource/Free\ Laptop\ Screen\ Mockup\ In\ A\ Office\ Environment.png);
-    background-position: 50% 75%;
+    transition: transform 0.15s;
 }
 
 .homepage {
@@ -494,6 +549,12 @@ footer > .contact {
 .titlecontainer > h1 {
     margin-left: 0;
     text-align: start;
+}
+
+.titlecontainer1 >h1 {
+    text-align: start;
+    padding-bottom: 4rem;
+    font-size: 60px;
 }
 
 .titlecontainer > div > p {
